@@ -1,0 +1,452 @@
+INFO:local-time-mcp:Starting Local Time MCP server (http)
+
+
+           ╭──────────────────────────────────────────────────────────────────────────────╮           
+           │                                                                              │           
+           │                         ▄▀▀ ▄▀█ █▀▀ ▀█▀ █▀▄▀█ █▀▀ █▀█                        │           
+           │                         █▀  █▀█ ▄▄█  █  █ ▀ █ █▄▄ █▀▀                        │           
+           │                                                                              │           
+           │                               FastMCP 2.13.0.2                               │           
+           │                                                                              │           
+           │                                                                              │           
+           │                  🖥  Server name: Local Time Server                           │           
+           │                                                                              │           
+           │                  📦 Transport:   HTTP                                        │           
+           │                  🔗 Server URL:  http://127.0.0.1:52792/mcp                  │           
+           │                                                                              │           
+           │                  📚 Docs:        https://gofastmcp.com                       │           
+           │                  🚀 Hosting:     https://fastmcp.cloud                       │           
+           │                                                                              │           
+           ╰──────────────────────────────────────────────────────────────────────────────╯           
+
+
+[11/05/25 08:58:58] INFO     Starting MCP server 'Local Time Server' with transport     server.py:2050
+                             'http' on http://127.0.0.1:52792/mcp                                     
+INFO:     Started server process [51937]
+INFO:     Waiting for application startup.
+INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:52792 (Press CTRL+C to quit)
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: a0845dd6463a4628bc6f0be89b4e9a21
+INFO:     127.0.0.1:60410 - "POST /mcp HTTP/1.1" 406 Not Acceptable
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 62b08eefbae84d1e94cba003e9ec87ec
+WARNING:root:Failed to validate request: 22 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.protocolVersion
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+InitializeRequest.params.clientInfo.version
+  Field required [type=missing, input_value={'name': 'gemini-cli'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'clientInfo': {'name': '...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+INFO:     127.0.0.1:49134 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: d430eda45d764af8bb4c0354d72fac09
+WARNING:root:Failed to validate request: 21 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo.version
+  Field required [type=missing, input_value={'name': 'gemini-cli'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+INFO:     127.0.0.1:33822 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: bbac7534baf24c9eb9e9df7f32b50015
+WARNING:root:Failed to validate request: 21 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo.version
+  Field required [type=missing, input_value={'name': 'gemini-cli'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '1.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+INFO:     127.0.0.1:48410 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: c72f5cee196f49da96a41b664f651c34
+WARNING:root:Failed to validate request: 21 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo.version
+  Field required [type=missing, input_value={'name': 'gemini-cli'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...i'}, 'capabilities': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+INFO:     127.0.0.1:48420 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 724412598a2a48caa576df2c02a786c2
+WARNING:root:Failed to validate request: 21 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo.version
+  Field required [type=missing, input_value={'name': 'gemini-cli'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...'resourceProvider': {}}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+INFO:     127.0.0.1:56376 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 8be7280db2b4454db329c4449ed2db85
+INFO:     127.0.0.1:47286 - "POST /mcp HTTP/1.1" 400 Bad Request
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 2d880ea9a31945c088a9dba501cd2625
+WARNING:root:Failed to validate request: 21 validation errors for ClientRequest
+PingRequest.method
+  Input should be 'ping' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+InitializeRequest.params.clientInfo.version
+  Field required [type=missing, input_value={'name': 'gemini-cli'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.method
+  Input should be 'completion/complete' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CompleteRequest.params.ref
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CompleteRequest.params.argument
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SetLevelRequest.method
+  Input should be 'logging/setLevel' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SetLevelRequest.params.level
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+GetPromptRequest.method
+  Input should be 'prompts/get' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+GetPromptRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListPromptsRequest.method
+  Input should be 'prompts/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourcesRequest.method
+  Input should be 'resources/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ListResourceTemplatesRequest.method
+  Input should be 'resources/templates/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.method
+  Input should be 'resources/read' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+ReadResourceRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+SubscribeRequest.method
+  Input should be 'resources/subscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+SubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+UnsubscribeRequest.method
+  Input should be 'resources/unsubscribe' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+UnsubscribeRequest.params.uri
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+CallToolRequest.method
+  Input should be 'tools/call' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+CallToolRequest.params.name
+  Field required [type=missing, input_value={'protocolVersion': '2.0'...Id': 'gemini-session-1'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.12/v/missing
+ListToolsRequest.method
+  Input should be 'tools/list' [type=literal_error, input_value='initialize', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/literal_error
+INFO:     127.0.0.1:47292 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 40ca2cea3aa041b09118364f9747c0de
+INFO:     127.0.0.1:35816 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 80e0a18f21e5487abc4ce72756fdd958
+INFO:     127.0.0.1:55272 - "POST /mcp HTTP/1.1" 400 Bad Request
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: 27dfee5dd5e14a4487cf061dd47e3501
+INFO:     127.0.0.1:56116 - "POST /mcp HTTP/1.1" 400 Bad Request
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: a7d450acf3264678a542130b61caeaa0
+INFO:     127.0.0.1:57636 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50022 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: d795d24fd8294bafbe0aaaf4c0664ebb
+INFO:     127.0.0.1:46360 - "POST /mcp HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:55956 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:     127.0.0.1:42886 - "POST /mcp HTTP/1.1" 200 OK
+INFO:mcp.server.lowlevel.server:Processing request of type CallToolRequest
+INFO:mcp.server.streamable_http_manager:Created new transport with session ID: da76f2d8bc3f45dcb6249dab008051d0
+INFO:     127.0.0.1:54162 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57642 - "POST /mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34030 - "POST /mcp HTTP/1.1" 200 OK
