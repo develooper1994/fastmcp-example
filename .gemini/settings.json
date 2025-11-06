@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "local-time": {
-      "command": "/home/developer/mcp/datetime-server/venv/bin/python",
-      "args": ["/home/developer/mcp/datetime-server/server_fastmcp.py"],
+      "command": "../venv/bin/python",
+      "args": ["../server_fastmcp.py"],
       "transport": "stdio"
     }
 //,"local-time-http": {"url": "http://127.0.0.1:8000/mcp"}
